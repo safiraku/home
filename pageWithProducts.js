@@ -158,7 +158,7 @@ function checkout() {
   //   var
   //   text = `Pesanan : ${cartItem.name}\nHarga :  ${cartItem.price}\nJumlah : ${cartItem.quantity}\nHarga Total : ${parseInt(cartItem.price)*parseInt(cartItem.quantity)}\n===================================\n`;
   //   waFormHTML += ` 
-  //     <input type="hidden" name="phone" value="6281284829188">
+  //     <input type="hidden" name="phone" value="6289677657045">
   //     <input type="hidden" name="text" value="${text}">
   //   `;
   // });
@@ -175,13 +175,14 @@ function checkout() {
   var template = `<input type="hidden" name="text" value="~id~">`;
   
   var ab = ""
+  var total = 0;
   cart.forEach(function(item) {
-    console.log(item)
-    ab += `Pesanan      : ${item.name}\nHarga         :  ${item.price}\nJumlah        : ${item.quantity}\nHarga Total : ${parseInt(item.price)*parseInt(item.quantity)}\n\n`
+    total += parseInt(item.price)
+    ab += `Pesanan      : ${item.name}\nHarga         :  ${item.price}\nJumlah        : ${item.quantity}\nHarga Total : ${parseInt(item.price)*parseInt(item.quantity)}\n-------------------------------------------------------\n`
     
   });
+  ab += `Total Bayar : ${total}\n-------------------------------------------------------`
   target.insertAdjacentHTML("beforeend", template.replace(/~id~/g, ab));
-console.log(ab)
   document.getElementById('wa-form').submit();
 }
 
