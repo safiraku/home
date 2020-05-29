@@ -178,7 +178,7 @@ function checkout() {
   var total = 0;
   cart.forEach(function(item) {
     total += parseInt(item.price)
-    ab += `Pesanan      : ${item.name}\nHarga         :  ${item.price}\nJumlah        : ${item.quantity}\nHarga Total : ${parseInt(item.price)*parseInt(item.quantity)}\n-------------------------------------------------------\n`
+    ab += `Pesanan      : ${item.name}\nHarga          :  ${item.price}\nJumlah        : ${item.quantity}\nHarga Total : ${parseInt(item.price)*parseInt(item.quantity)}\n-------------------------------------------------------\n`
     
   });
   ab += `Total Bayar : ${total}\n-------------------------------------------------------`
