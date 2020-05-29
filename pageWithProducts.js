@@ -149,7 +149,7 @@ function clearCart() {
 function checkout() {
   let waFormHTML = `
     <form id="wa-form" action="https://api.whatsapp.com/send?">
-    <input type="hidden" name="phone" value="6281220701139">
+    <input type="hidden" name="phone" value="6281284829188">
   `;
 
   // cart.forEach((cartItem, index) => {
