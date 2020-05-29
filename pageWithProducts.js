@@ -158,7 +158,7 @@ function checkout() {
   //   var
   //   text = `Pesanan : ${cartItem.name}\nHarga :  ${cartItem.price}\nJumlah : ${cartItem.quantity}\nHarga Total : ${parseInt(cartItem.price)*parseInt(cartItem.quantity)}\n===================================\n`;
   //   waFormHTML += ` 
-  //     <input type="hidden" name="phone" value="6289677657045">
+  //     <input type="hidden" name="phone" value="6281284829188">
   //     <input type="hidden" name="text" value="${text}">
   //   `;
   // });
