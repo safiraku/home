@@ -175,13 +175,13 @@ function checkout() {
   var template = `<input type="hidden" name="text" value="~id~">`;
   
   var ab = ""
-  var total = 0;
+  //var total = 0;
   cart.forEach(function(item) {
-    total += parseInt(item.price)
+    //total += parseInt(item.price)
     ab += `Pesanan      : ${item.name}\nHarga          :  ${item.price}\nJumlah        : ${item.quantity}\nHarga Total : ${parseInt(item.price)*parseInt(item.quantity)}\n-------------------------------------------------------\n`
     
   });
-  ab += `Total Bayar : ${total}\n-------------------------------------------------------`
+  //ab += `Total Bayar : ${total}\n-------------------------------------------------------`
   target.insertAdjacentHTML("beforeend", template.replace(/~id~/g, ab));
   document.getElementById('wa-form').submit();
 }
